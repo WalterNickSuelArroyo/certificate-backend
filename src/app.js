@@ -5,9 +5,7 @@ const certificateRoutes = require('./routes/certificateRoutes');
 
 // Configurar servidor
 const app = express();
-app.use(cors({
-  origin: 'https://certificate-frontend-nine.vercel.app/'
-}));
+app.use(cors());
 app.use(bodyParser.json());
 
 // Rutas
